@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo1.png" alt="Shree Umiyaji Batteries" />
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+      </header>
+    <!-- Hero Section without Background Image -->
+    <section class="contact-hero" data-aos="fade-in">
+        <div class="overlay">
+            <h1>Get in Touch with Us</h1>
+            <p>We’re here to help. Drop us a message and we’ll get back to you as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form" data-aos="fade-right">
+        <h2>Contact Us</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeaYj9t52Pg8-sRzXlfaxutm8myHuUxx5_gpAsRJLwHcERxYQ/viewform?embedded=true" width="100%" height="1000" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+
+
+    <!-- Decorative Visuals -->
+    <div class="decorative-background"></div>
+
+    <!-- Contact Info Section (At the bottom) -->
+    <section class="contact-info" data-aos="fade-left">
+        <div class="contact-details">
+            <div class="contact-item">
+                <a href="tel:+919427239195" class="contact-link">📞Call Us</a>
+            </div>
+            <div class="contact-item">
+                <a href="shreeumabatt15@gmail.com" class="contact-link">✉️Email</a>
+            </div>
+            <div class="contact-item">
+                <a href="https://maps.app.goo.gl/8Bu5YABXdMLKP7xM6" target="_blank" class="contact-link">📍Visit Us</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shree Umiyaji Batteries And Sales. All Rights Reserved.</p>
+</footer>
+    <!-- Include JavaScript for FAQ Toggle -->
+    <script>
+        document.querySelectorAll('.faq-toggle').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+    <!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+      function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+  AOS.init({
+    duration: 1000, // Animation duration
+    once: true,     // Whether animation should happen only once
+  });
+</script>
+</body>
+
+</html>
